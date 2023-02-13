@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+}
+
+
+/* Sticky bar */
+.sticky{
+    display: flex;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    background: #fff;
+    padding: 14px 7px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.sticky > :first-child{
+    margin: auto;
+}
+
+.sticky > :first-child a{
+    color: #f06e1a;
+    text-decoration: none;
+}
+
+.sticky > :first-child a:hover{
+    color: #f0ae1a;
+}
+
+.sticky .btn{
+    background: black;
+    padding: 8px 33px;
+    cursor: pointer;
+}
+
+.sticky .btn:hover{
+    background: #3a3939;
+}
+
+.sticky .btn a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* Wrapper */
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Navbar */
+.header{
+    display: block;
+}
+
+.navbar{
+    margin-top: 18px;
+}
+
+.hamburgerMenu{
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin-right: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #606060;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 3px 7px;
+}
+
+.navbar ul li a:nth-child(4){
+    background-image: url(https://www.areality.sk/img/icons/icon-menu-inzerat-small.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 24px;
+}
+
+.navbar ul li a:nth-child(5){
+    background-image: url(https://www.areality.sk/img/icons/icon-menu-dopyt-small.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 24px;
+}
+
+.navbar ul li a:hover, .active{
+    color: #fff !important;
+    background-color: #1a93d8;
+}
+
+
+/* Breadcrumb */
+.breadcrumb{
+    color: #acacac;
+    font-size: 12px;
+    margin: 12px;
+}
+
+.breadcrumb span a{
+    color: #acacac;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.breadcrumb span a:hover{
+    text-decoration: underline;
+}
+
+
+/* Container */
+.container{
+    display: flex;
+}
+
+.container .left{
+   width: 50%;
+}
+
+.container .right{
+    width: 100%;
+    margin-left: 70px;
+}
+
+h1{
+    color: #1f1f1f;
+    font-weight: 300;
+    font-size: 17pt;
+    background-image: url(https://www.areality.sk/img/icons/icon-header.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    line-height: 30px;
+    margin: 0 0 20px;
+}
+
+.container .left img:first-child{
+    width: 100%;
+    height: auto;
+}
+
+.container .left .actions{
+    margin: 10px 0;
+}
+
+.container .left .actions a{
+    text-decoration: none;
+    color: #626262;
+    padding: 6px 9px;
+    margin-right: 5px;
+}
+
+.container .left .actions a:first-child{
+    color: #fff;
+    background-color: #f06e1a;
+}
+
+.container .left .actions a:hover{
+    text-decoration: underline;
+}
+
+.container .actions a:nth-child(2){
+    background-image: url(./images/share.png);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+}
+
+.container .actions a:nth-child(3){
+    background-image: url(./images/print.png);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+}
+
+.container .actions a:nth-child(4){
+    background-image: url(./images/pdf.png);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+}
+
+.container .left .para h2{
+    font-size: 13pt;
+    margin: 8px 0;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.container .left .para{
+    color: #333;
+    margin: 25px 0;
+    line-height: 21px;
+}
+
+.container .left .para #extendParaBtn{
+    color: #f06e1a;
+}
+
+.container .left .para #extendParaBtn{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container .left .para #extendedPara{
+    display: none;
+}
+
+/* Map */
+.map{
+    height: 350px;
+    width: 660px;
+    margin: 20px 0;
+}
+
+/* btnContainer */
+.btnContainer{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 12px;
+}
+
+.btnContainer a:first-child{
+    background-color: #41a72a;
+    background-image: url(https://www.areality.sk/img/icons/icon-topovat-30x30.png);
+    background-position: 3px center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    padding: 7px 7px;
+    color: #fff;
+    padding-left: 33px;
+    margin-right: 15px;
+}
+
+.btnContainer a:nth-child(2){
+    background-color: #f06e1a;
+    background-image: url(https://www.areality.sk/img/icons/icon-nahlasit-30x30.png);
+    background-position: 3px center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    padding: 7px 7px;
+    color: #fff;
+    padding-left: 33px;
+}
+
+.btnContainer a:hover{
+    text-decoration: underline;
+}
+
+/* Table */
+.table ul{
+    list-style: none;
+    line-height: 35px;
+}
+
+.table ul li{
+    color: #898989;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table ul li span:nth-child(2){
+    color: #333;
+    width: 49%;
+    display: table-cell;
+}
+
+
+/* Contact Form */
+.contactForm h3{
+    font-weight: 300;
+    color: #1f1f1f;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form input,.contactForm form textarea{
+    padding: 7px 9px;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 9px;
+}
+
+.contactForm form label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contactForm form span{
+    font-size: 13px;
+    padding-left: 18px;
+}
+
+.contactForm form .btnArrow{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: #1a93d8;
+    text-align: center;
+    width: auto;
+    padding: 0 15px;
+    cursor: pointer;
+    max-width: 240px;
+    margin: 18px 0;
+}
+
+.contactForm form .btnArrow::after{
+    right: -40px;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(26,147,216,0);
+    border-left-color: #1a93d8;
+    border-width: 20px;
+    margin-top: -20px;
+    z-index: 100;
+}
+
+.contactForm .contactInfo{
+    display: flex;
+    flex-direction: column;
+    line-height: 21px;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.contactForm .contactInfo span a{
+    text-decoration: none;
+    color: #f06e1a;
+}
+
+.contactForm .contactInfo span a:hover{
+    text-decoration: underline;
+}
+
+/* Container 2 */
+.container2{
+    margin: 30px 0;
+}
+
+.container2 h2{
+    color: #1f1f1f;
+    font-weight: 300;
+    font-size: 17pt;
+    background-image: url(https://www.areality.sk/img/icons/icon-header.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    line-height: 30px;
+    padding-left: 45px;
+    margin: 0 0 20px;
+}
+
+.container2 h2 a{
+    color: #1f1f1f;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container2 h2 a:hover{
+    text-decoration: underline;
+}
+
+.container2 .innerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 .innerContainer .box{
+    display: flex;
+    flex-direction: column;
+    line-height: 21px;
+}
+
+.container2 .innerContainer img{
+    width: 242px;
+    height: auto !important;
+}
+
+.container2 .innerContainer a{
+   color: #028ad8;
+}
+
+
+/* Search Navigator */
+.search-navigator{
+    display: flex;
+    margin: 15px 0;
+}
+
+.search-navigator img{
+    width: 300px;
+}
+
+.search-navigator ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.search-navigator ul li{
+    margin-right: 10px;
+}
+
+.search-navigator ul li a{
+    color: #afafaf;
+    font-size: 8pt;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.search-navigator ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer{
+    width: fit-content;
+    margin: 36px auto;
+    font-size: 14px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #f06e1a;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/* Separator */
+.separator{
+    width: 100%;
+    background-color: #e8e8e8;
+    height: 1px;
+    margin: 40px 0;
+}
+
+
+
+/* Responsive code */
+@media only screen and (max-width: 998px) {
+    .right{
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+    .left{
+        width: auto !important;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container2 .innerContainer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .wrapper{
+        margin: 0 6px;
+    }
+  }
+
+@media only screen and (max-width: 720px) {
+    .navbar{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+    .hamburgerMenu .list-items{
+        width: -webkit-fill-available;
+        position: absolute;
+        top: 137px;
+        left: 0;
+        background-color: #fff;
+        padding: 10px 20px;
+        list-style: none;
+        line-height: 30px;
+        display: none;
+    }
+    .hamburgerMenu .list-items li:hover, .hamburgerMenu .list-items li:hover a{
+        color: #fff !important;
+        background-color: #028ad8;
+    }
+    .active2{
+        background-color: #028ad8;
+    }
+    .active2 a{
+        color: #fff !important;
+    }
+    .hamburgerMenu .list-items a{
+        padding: 3px 9px;
+        text-decoration: none;
+        color: #1f1f1f;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburgerBtn{
+        font-size: 30px;
+        color: #fff;
+        background-color: #8a8681;
+        padding: 2px 8px;
+        cursor: pointer;
+    }
+    .contactForm form .btnArrow{
+        max-width: -webkit-fill-available !important;
+    }
+    .contactForm form .btnArrow::after{
+        display: none;
+    }
+    .breadcrumb{
+        display: none;
+    }
+  }
