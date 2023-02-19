@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@
     border: 1px solid #ccc;
     font-size: 17px;
     background: #fff;
-    padding: 14px 7px;
+    padding: 8px;
     position: sticky;
     top: 0;
     left: 0;
@@ -33,7 +35,7 @@
 
 .sticky .btn{
     background: black;
-    padding: 8px 33px;
+    padding: 4px 36px;
     cursor: pointer;
 }
 
@@ -42,8 +44,8 @@
 }
 
 .sticky .btn a{
-    color: white;
-    font-weight: 600;
+    color: #fff;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -59,10 +61,22 @@
 /* Navbar */
 .header{
     display: block;
+    padding-top: 20px;
 }
 
 .navbar{
-    margin-top: 18px;
+    margin-top: 22px;
+}
+
+.navbar ul li:first-child{
+    margin-right: 19px;
+}
+
+.navbar ul li:first-child a{
+    background-image: url(https://en.areality.sk/img/icons/main-menu-home.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 14px;
 }
 
 .hamburgerMenu{
@@ -75,30 +89,30 @@
 }
 
 .navbar ul li{
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color: #606060;
-    font-size: 17px;
+    font-size: 13pt;
     font-weight: 600;
-    font-family: Helvetica, Arial, sans-serif;
-    padding: 3px 7px;
+    font-family: 'Open Sans',sans-serif;
+    padding: 2px 12px;
 }
 
-.navbar ul li a:nth-child(4){
+.navbar ul li:nth-child(5) a{
     background-image: url(https://www.areality.sk/img/icons/icon-menu-inzerat-small.png);
     background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 24px;
+    background-position: 10px;
+    padding-left: 34px;
 }
 
-.navbar ul li a:nth-child(5){
+.navbar ul li:nth-child(6) a{
     background-image: url(https://www.areality.sk/img/icons/icon-menu-dopyt-small.png);
     background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 24px;
+    background-position: 10px;
+    padding-left: 34px;
 }
 
 .navbar ul li a:hover, .active{
@@ -106,18 +120,23 @@
     background-color: #1a93d8;
 }
 
+.navbar ul li:first-child:hover a{
+    background-color: #fff;
+}
+
 
 /* Breadcrumb */
 .breadcrumb{
     color: #acacac;
     font-size: 12px;
-    margin: 12px;
+    margin-top: 12px;
+    margin-bottom: 20px;
 }
 
 .breadcrumb span a{
     color: #acacac;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .breadcrumb span a:hover{
@@ -131,12 +150,12 @@
 }
 
 .container .left{
-   width: 50%;
+   width: 55%;
 }
 
 .container .right{
-    width: 100%;
-    margin-left: 70px;
+    width: 44%;
+    margin-left: 33px;
 }
 
 h1{
@@ -144,11 +163,12 @@ h1{
     font-weight: 300;
     font-size: 17pt;
     background-image: url(https://www.areality.sk/img/icons/icon-header.png);
-    background-position: left;
+    background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 40px;
+    padding-left: 45px;
+    padding-bottom: 4px;
     line-height: 30px;
-    margin: 0 0 20px;
+    margin: 0 0 17px;
 }
 
 .container .left img:first-child{
@@ -163,8 +183,9 @@ h1{
 .container .left .actions a{
     text-decoration: none;
     color: #626262;
-    padding: 6px 9px;
-    margin-right: 5px;
+    padding: 5px 11px;
+    margin-right: 20px;
+    font-size: 14.5px;
 }
 
 .container .left .actions a:first-child{
@@ -179,36 +200,40 @@ h1{
 .container .actions a:nth-child(2){
     background-image: url(./images/share.png);
     background-repeat: no-repeat;
-    padding-left: 32px;
+    padding-left: 39px;
 }
 
 .container .actions a:nth-child(3){
     background-image: url(./images/print.png);
     background-repeat: no-repeat;
-    padding-left: 32px;
+    padding-left: 39px;
 }
 
 .container .actions a:nth-child(4){
     background-image: url(./images/pdf.png);
     background-repeat: no-repeat;
-    padding-left: 32px;
+    padding-left: 39px;
 }
 
 .container .left .para h2{
-    font-size: 13pt;
+    color: #333;
     margin: 8px 0;
     line-height: 22px;
     font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.6px;
 }
 
 .container .left .para{
     color: #333;
     margin: 25px 0;
     line-height: 21px;
+    font-size: 15px;
 }
 
 .container .left .para #extendParaBtn{
     color: #f06e1a;
+    font-size: 15px;
 }
 
 .container .left .para #extendParaBtn{
@@ -218,13 +243,17 @@ h1{
 
 .container .left .para #extendedPara{
     display: none;
+    font-size: 15px;
 }
 
 /* Map */
 .map{
     height: 350px;
     width: 660px;
-    margin: 20px 0;
+    margin: 34px 0;
+    top: 0;
+    width: auto;
+    position: relative;
 }
 
 /* btnContainer */
@@ -232,29 +261,36 @@ h1{
     display: flex;
     justify-content: end;
     margin-bottom: 12px;
+    top: 0;
+    width: auto;
+    position: relative;
 }
 
 .btnContainer a:first-child{
     background-color: #41a72a;
     background-image: url(https://www.areality.sk/img/icons/icon-topovat-30x30.png);
-    background-position: 3px center;
+    background-position: 2px 2px;
     background-repeat: no-repeat;
     text-decoration: none;
-    padding: 7px 7px;
+    padding: 5px 7px;
     color: #fff;
-    padding-left: 33px;
     margin-right: 15px;
+    padding-left: 32px;
+    height: fit-content;
+    font-size: 11pt;
 }
 
 .btnContainer a:nth-child(2){
-    background-color: #f06e1a;
+    background-color: #f2461f;
     background-image: url(https://www.areality.sk/img/icons/icon-nahlasit-30x30.png);
-    background-position: 3px center;
+    background-position: 2px top;
     background-repeat: no-repeat;
     text-decoration: none;
-    padding: 7px 7px;
+    padding: 5px 7px;
     color: #fff;
-    padding-left: 33px;
+    padding-left: 32px;
+    height: fit-content;
+    font-size: 11pt;
 }
 
 .btnContainer a:hover{
@@ -262,14 +298,38 @@ h1{
 }
 
 /* Table */
+.table{
+    top: 0;
+    width: auto;
+    position: relative;
+}
+
 .table ul{
     list-style: none;
     line-height: 35px;
+    font-size: 11pt;
+}
+
+.table .separator2{
+    width: 100%;
+    background-color: #bbbbbb;
+    height: 1px;
+}
+
+.table ul li:first-child span:nth-child(2) a{
+    display: flex;
+    flex-direction: column;
+}
+
+.table ul li:first-child span:nth-child(2) a{
+    margin-top: -13px;
+    text-decoration: underline;
+    color: #f06e1a;
 }
 
 .table ul li{
     color: #898989;
-    margin-left: 25px;
+    margin-left: 2px;
     display: flex;
     justify-content: space-between;
 }
@@ -282,11 +342,18 @@ h1{
 
 
 /* Contact Form */
+.contactForm{
+    top: 0;
+    width: auto;
+    position: relative;
+}
+
 .contactForm h3{
     font-weight: 300;
     color: #1f1f1f;
     font-size: 22px;
     margin: 20px 0;
+    margin-top: 50px;
 }
 
 .contactForm form{
@@ -295,11 +362,30 @@ h1{
 }
 
 .contactForm form input,.contactForm form textarea{
-    padding: 7px 9px;
-    background-color: #ebebeb;
+    /* padding: 7px 9px;
+    background-color: #ebebeb; */
     border: none;
     border-radius: 2px;
     margin-bottom: 9px;
+    background-color: #ebebeb;
+    padding: 0 8px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.contactForm form .checkbox{
+    height: auto;
+}
+
+.contactForm form .checkbox-label{
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 7px;
+    color: #333333;
+}
+
+.contactForm form textarea{
+    height: 160px;
 }
 
 .contactForm form label{
@@ -309,7 +395,7 @@ h1{
 
 .contactForm form span{
     font-size: 13px;
-    padding-left: 18px;
+    padding-left: 23px;
 }
 
 .contactForm form .btnArrow{
@@ -326,6 +412,7 @@ h1{
     cursor: pointer;
     max-width: 240px;
     margin: 18px 0;
+    margin-top: 35px;
 }
 
 .contactForm form .btnArrow::after{
@@ -352,6 +439,10 @@ h1{
     margin: 20px 0;
 }
 
+.contactForm .contactInfo strong{
+    color: #333333;
+}
+
 .contactForm .contactInfo span a{
     text-decoration: none;
     color: #f06e1a;
@@ -363,7 +454,10 @@ h1{
 
 /* Container 2 */
 .container2{
-    margin: 30px 0;
+    margin: 42px 0;
+    top: 0;
+    width: auto;
+    position: relative;
 }
 
 .container2 h2{
@@ -400,13 +494,24 @@ h1{
     line-height: 21px;
 }
 
+.container2 .innerContainer .box p{
+    color: #797979;
+    font-size: 10pt;
+    padding-top: 2px;
+}
+
+.container2 .innerContainer .box strong{
+    color: #1f1f1f;
+}
+
 .container2 .innerContainer img{
-    width: 242px;
+    width: 282px;
     height: auto !important;
 }
 
 .container2 .innerContainer a{
    color: #028ad8;
+   font-size: 11pt;
 }
 
 
@@ -414,10 +519,12 @@ h1{
 .search-navigator{
     display: flex;
     margin: 15px 0;
+    justify-content: space-between;
+    padding-right: 27px;
 }
 
 .search-navigator img{
-    width: 300px;
+    width: 200px;
 }
 
 .search-navigator ul{
@@ -427,26 +534,34 @@ h1{
     margin-left: 30px;
 }
 
-.search-navigator ul li{
+.search-navigator div{
     margin-right: 10px;
+    line-height: 12px;
 }
 
-.search-navigator ul li a{
+.search-navigator li{
+    list-style: none;
+}
+
+.search-navigator li a{
     color: #afafaf;
     font-size: 8pt;
     line-height: 16px;
     text-decoration: none;
 }
 
-.search-navigator ul li a:hover{
+.search-navigator li a:hover{
     text-decoration: underline;
 }
 
 /* Footer */
 .footer{
     width: fit-content;
-    margin: 36px auto;
-    font-size: 14px;
+    margin: 29px auto;
+    font-size: 13px;
+    margin-bottom: 15px;
+    top: 0;
+    position: relative;
 }
 
 .footer a{
@@ -463,13 +578,76 @@ h1{
     width: 100%;
     background-color: #e8e8e8;
     height: 1px;
-    margin: 40px 0;
+    margin: 26px 0;
 }
 
 
 
 /* Responsive code */
 @media only screen and (max-width: 998px) {
+    .separator3{
+        width: 100%;
+        background-color: #bbbbbb;
+        height: 1px;
+    }
+    .header .logo img{
+        width: 255px;
+    }
+    .btnContainer{
+        position: absolute;
+        top: 640px;
+        width: 91vw;
+    }
+    .btnContainer a{
+        width: 50%;
+    }
+    .container .left .para h2 {
+        margin-top: 46px;
+        letter-spacing: normal;
+        font-size: 13pt;
+    }
+    .container .left .para {
+        line-height: 18px;
+        font-size: 10pt;
+    }
+    .table{
+        position: absolute;
+        top: 864px;
+        width: 91vw;
+    }
+    .table ul{
+        font-size: 10pt;
+    }
+    .contactForm{
+        position: absolute;
+        top: 1512px;
+        width: 91vw;
+    }
+    .map{
+        position: absolute;
+        top: 2114px;
+        width: 91vw;
+    }
+    .container2{
+        position: absolute;
+        top: 2482px;
+        width: 91vw;
+    }
+    .search-navigator{
+        display: none;
+    }
+    .footer{
+        position: absolute;
+        top: 3071px;
+        width: 91vw;
+        text-align: center;
+        line-height: 21px;
+        padding-bottom: 10px;
+    }
+    h1{
+        padding-left: 0;
+        background-image: none;
+    }
     .right{
         width: auto !important;
         margin-left: 0 !important;
@@ -499,7 +677,7 @@ h1{
     .hamburgerMenu .list-items{
         width: -webkit-fill-available;
         position: absolute;
-        top: 137px;
+        top: 124px;
         left: 0;
         background-color: #fff;
         padding: 10px 20px;
@@ -507,9 +685,14 @@ h1{
         line-height: 30px;
         display: none;
     }
+    
     .hamburgerMenu .list-items li:hover, .hamburgerMenu .list-items li:hover a{
         color: #fff !important;
         background-color: #028ad8;
+    }
+    
+    .hamburgerMenu .list-items li{
+        padding: 3px 0;
     }
     .active2{
         background-color: #028ad8;
@@ -520,7 +703,8 @@ h1{
     .hamburgerMenu .list-items a{
         padding: 3px 9px;
         text-decoration: none;
-        color: #1f1f1f;
+        color: #5d5b5b;
+        font-size: 11pt;    
     }
     .header{
         display: flex;
@@ -530,8 +714,8 @@ h1{
     .hamburgerBtn{
         font-size: 30px;
         color: #fff;
-        background-color: #8a8681;
-        padding: 2px 8px;
+        background-color: #bbbbbb;
+        padding: 2px 10px;
         cursor: pointer;
     }
     .contactForm form .btnArrow{
