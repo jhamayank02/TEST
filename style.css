@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
 *{
     margin: 0;
@@ -18,6 +18,7 @@
     top: 0;
     left: 0;
     font-family: Helvetica, Arial, sans-serif;
+    z-index: 2;
 }
 
 .sticky > :first-child{
@@ -69,7 +70,7 @@
 }
 
 .navbar ul li:first-child{
-    margin-right: 19px;
+    margin-right: 10px;
 }
 
 .navbar ul li:first-child a{
@@ -89,7 +90,8 @@
 }
 
 .navbar ul li{
-    margin-right: 25px;
+    margin-right: 10px;
+    min-width:fit-content;
 }
 
 .navbar ul li a{
@@ -177,15 +179,18 @@ h1{
 }
 
 .container .left .actions{
-    margin: 10px 0;
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container .left .actions a{
     text-decoration: none;
     color: #626262;
-    padding: 5px 11px;
-    margin-right: 20px;
-    font-size: 14.5px;
+    padding: 5px 10px;
+    margin-right: 13px;
+    font-size: 10pt;
+    margin-top: 10px;
 }
 
 .container .left .actions a:first-child{
@@ -200,19 +205,19 @@ h1{
 .container .actions a:nth-child(2){
     background-image: url(./images/share.png);
     background-repeat: no-repeat;
-    padding-left: 39px;
+    padding-left: 34px;
 }
 
 .container .actions a:nth-child(3){
     background-image: url(./images/print.png);
     background-repeat: no-repeat;
-    padding-left: 39px;
+    padding-left: 34px;
 }
 
 .container .actions a:nth-child(4){
     background-image: url(./images/pdf.png);
     background-repeat: no-repeat;
-    padding-left: 39px;
+    padding-left: 34px;
 }
 
 .container .left .para h2{
@@ -226,9 +231,10 @@ h1{
 
 .container .left .para{
     color: #333;
-    margin: 25px 0;
+    margin: 10px 0;
     line-height: 21px;
     font-size: 15px;
+    margin-top: 30px;
 }
 
 .container .left .para #extendParaBtn{
@@ -248,22 +254,29 @@ h1{
 
 /* Map */
 .map{
-    height: 350px;
-    width: 660px;
     margin: 34px 0;
-    top: 0;
-    width: auto;
-    position: relative;
+}
+
+.left .map{
+    display: block;
+}
+
+.right .map{
+    display: none;
 }
 
 /* btnContainer */
-.btnContainer{
+.right .btnContainer{
     display: flex;
     justify-content: end;
     margin-bottom: 12px;
     top: 0;
-    width: auto;
+    flex-wrap: wrap;
     position: relative;
+}
+
+.left .btnContainer{
+    display: none;
 }
 
 .btnContainer a:first-child{
@@ -274,13 +287,14 @@ h1{
     text-decoration: none;
     padding: 5px 7px;
     color: #fff;
-    margin-right: 15px;
     padding-left: 32px;
     height: fit-content;
     font-size: 11pt;
+    margin-top: 2px;
 }
 
 .btnContainer a:nth-child(2){
+    margin-left: 15px;
     background-color: #f2461f;
     background-image: url(https://www.areality.sk/img/icons/icon-nahlasit-30x30.png);
     background-position: 2px top;
@@ -291,6 +305,7 @@ h1{
     padding-left: 32px;
     height: fit-content;
     font-size: 11pt;
+    margin-top: 2px;
 }
 
 .btnContainer a:hover{
@@ -299,9 +314,7 @@ h1{
 
 /* Table */
 .table{
-    top: 0;
     width: auto;
-    position: relative;
 }
 
 .table ul{
@@ -343,9 +356,7 @@ h1{
 
 /* Contact Form */
 .contactForm{
-    top: 0;
     width: auto;
-    position: relative;
 }
 
 .contactForm h3{
@@ -362,8 +373,6 @@ h1{
 }
 
 .contactForm form input,.contactForm form textarea{
-    /* padding: 7px 9px;
-    background-color: #ebebeb; */
     border: none;
     border-radius: 2px;
     margin-bottom: 9px;
@@ -455,9 +464,7 @@ h1{
 /* Container 2 */
 .container2{
     margin: 42px 0;
-    top: 0;
-    width: auto;
-    position: relative;
+    overflow-x: hidden;
 }
 
 .container2 h2{
@@ -527,16 +534,17 @@ h1{
     width: 200px;
 }
 
-.search-navigator ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 30px;
-}
-
 .search-navigator div{
     margin-right: 10px;
     line-height: 12px;
+}
+
+.search-navigator  div:nth-child(2), .search-navigator  div:nth-child(3), .search-navigator  div:nth-child(4), .search-navigator  div:nth-child(5){
+    display: block;
+}
+
+.search-navigator  div:nth-child(6), .search-navigator  div:nth-child(7){
+    display: none;
 }
 
 .search-navigator li{
@@ -550,6 +558,10 @@ h1{
     text-decoration: none;
 }
 
+.search-navigator a{
+    margin-right: 34px;
+}
+
 .search-navigator li a:hover{
     text-decoration: underline;
 }
@@ -560,8 +572,6 @@ h1{
     margin: 29px auto;
     font-size: 13px;
     margin-bottom: 15px;
-    top: 0;
-    position: relative;
 }
 
 .footer a{
@@ -581,10 +591,9 @@ h1{
     margin: 26px 0;
 }
 
-
-
 /* Responsive code */
-@media only screen and (max-width: 998px) {
+
+@media only screen and (max-width: 804px) {
     .separator3{
         width: 100%;
         background-color: #bbbbbb;
@@ -593,53 +602,49 @@ h1{
     .header .logo img{
         width: 255px;
     }
-    .btnContainer{
-        position: absolute;
-        top: 640px;
-        width: 91vw;
+    .right .btnContainer{
+        display: none;
     }
-    .btnContainer a{
+    .left .btnContainer{
+        display: flex;
+    }
+    .left .btnContainer a{
         width: 50%;
+        font-size: 10pt;
+        text-transform: lowercase;
     }
     .container .left .para h2 {
-        margin-top: 46px;
         letter-spacing: normal;
         font-size: 13pt;
     }
     .container .left .para {
         line-height: 18px;
         font-size: 10pt;
-    }
-    .table{
-        position: absolute;
-        top: 864px;
-        width: 91vw;
+        margin-top: 10px;
     }
     .table ul{
         font-size: 10pt;
     }
-    .contactForm{
-        position: absolute;
-        top: 1512px;
-        width: 91vw;
-    }
-    .map{
-        position: absolute;
-        top: 2114px;
-        width: 91vw;
-    }
-    .container2{
-        position: absolute;
-        top: 2482px;
-        width: 91vw;
-    }
-    .search-navigator{
+    .left .map{
         display: none;
     }
+    .right .map{
+        display: block;
+        margin-top: 26px;
+        margin-bottom: 0px;
+        width: -webkit-fill-available;
+    }
+    .container2{
+        margin: 26px 0;
+    }
+    .search-navigator  div:nth-child(2), .search-navigator  div:nth-child(3), .search-navigator  div:nth-child(4), .search-navigator  div:nth-child(5){
+        display: none;
+    }
+
+    .search-navigator  div:nth-child(6), .search-navigator  div:nth-child(7){
+        display: block;
+    }
     .footer{
-        position: absolute;
-        top: 3071px;
-        width: 91vw;
         text-align: center;
         line-height: 21px;
         padding-bottom: 10px;
@@ -667,12 +672,15 @@ h1{
     }
   }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 804px) {
     .navbar{
         display: none;
     }
     .hamburgerMenu{
         display: block;
+    }
+    .btnContainer{
+        flex-wrap: nowrap;
     }
     .hamburgerMenu .list-items{
         width: -webkit-fill-available;
@@ -728,3 +736,42 @@ h1{
         display: none;
     }
   }
+
+@media only screen and (max-width: 751px) {
+    .search-navigator{
+        display: none;
+    }
+    .search-navigator + .separator{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .sticky .btn{
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .container2 .innerContainer img {
+        width: 46vw;
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    .container2 .innerContainer img {  
+        width: 94vw;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .sticky div{  
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    .actions a{
+        margin-top: 5px;
+    }
+}
