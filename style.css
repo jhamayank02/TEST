@@ -373,6 +373,7 @@ h1 {
 
 .left .map {
     display: block;
+    width: -webkit-fill-available;
 }
 
 .right .map {
@@ -1012,5 +1013,38 @@ h1 {
 @media only screen and (max-width: 487px) {
     .actions a {
         margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 1316px) {
+    .left .map {
+        margin-top: 46px;
+    }
+}
+
+@media only screen and (max-width: 1067px) {
+    .left .map {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .left .map {
+        margin-top: 72px;
+    }
+}
+
+@media only screen and (max-width: 971px) {
+    .left .map {
+        margin-top: 104px;
+    }
+}
+
+@media only screen and (max-width: 883px) {
+    .left .map {
+        display: block;
+        width: -webkit-fill-available;
+        margin-top: 148px;
+        height: 351px;
     }
 }
